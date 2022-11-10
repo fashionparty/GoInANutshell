@@ -208,3 +208,28 @@ func addTwo(number *int) {
   *number += 2
 }
 ```
+
+## Pakiety i struktura projektu
+
+```
+- Nazwa Projektu
+  - main.go
+  - mod.go
+  - pakiet1
+    -plik.go
+  -pakiet2
+    -plik.go
+```
+
+Plik `mod.go` tworzymy przez polecenie `go mod init NazwaProjektu`
+
+Struktura pliku `mod.go`:
+```
+module $NazwaModulu
+
+go $versia
+
+require {
+  // zależności
+}
+```
