@@ -137,4 +137,74 @@ For nieskończony:
 for i := 1; true, i++ {}
 ```
 
+## Formatowanie stringów
 
+Do formatowania tekstu służy `fmt.Printf` lub `fmt.Sprintf` jeżel chcemy zwrócić formatowany tekst:
+```
+fmt.Printf("Cena %s to %d grosze za sztuke.\n", "gumy do żucia", 23)
+```
+Instrukcje formatowania:
+- `%f` - liczba zmiennoprzecinkowa
+- `%d` - liczba całkowita
+- `%s` - łańcuch znaków
+- `%t` - watość logiczna
+- `%v` - dowolna wartość dobrana na podstawie typu wartości
+- `%#v` - dowolna wartość sformatowana w Go ( wyświetli np. "\n", instrukcja `%v` nie wyświetliła by nic )
+- `T` - typ podanej wartości
+- `%%` - znak procenta
+
+Dodatkowe opcje:
+```
+fmt.Printf("%12s | %2d\n", "Liczba:", 50)
+// Liczba: | 50
+
+fmt.Printf(%.2f\n, 1.2600000000000002
+// 1.26
+```
+
+## Funkcje
+
+Funkcja przyjmująca dwa floaty i zwracająca jeden float oraz obiekt error
+```
+func mojaFunkcja(arg1 float64, arg2 float64) (float64, error) {
+  
+}
+```
+
+## Wskaźniki
+Do pobrania adresu zmiennej używamy `&`
+Typ wskaźnikowy to typ zmiennej wskazywanej prezez wskaźnik, np. `*int`
+
+```
+val myIntPointer = *int
+myIntPointer = &myInt
+```
+
+Można również wykorzystać skrócony zapis:
+```
+myFloatPointer := &myFloat
+```
+
+Pobieranie wartości ze wskaźnika:
+```
+myInt := 4
+myIntPointer := &myFloat
+
+fmt.Println(myIntPonter)
+// 0x1040a124
+
+fmt.Println(&myIntPointer)
+// 4
+```
+
+Modyfikowanie zmiennej znajdującej się po za funkcją za pomocą wskaźnika:
+```
+func main() {
+  amount := 6
+  double(&amount)
+}
+
+func addTwo(number *int) {
+  *number += 2
+}
+```
