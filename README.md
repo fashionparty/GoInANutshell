@@ -248,3 +248,57 @@ W stałych można pominąć typ ale nie można używać zapisu `:=`:
 ```
 const Stala = 3
 ```
+
+## Tablice
+
+Inicjalizacja:
+```
+var notes [7]string
+notes[0] = "a"
+notes[1] = "b"
+notes[2] = "c"
+fmt.Println(notes[0])
+```
+Inicjalizacja literałem tablicowym:
+```
+notes := [3]int{"a","b","c"}
+```
+Uwaga - tablice są inicjalizowane wartościami zerowymi !
+
+Jeżeli dodajemy elementy w ososbnych wierszach to w ostatnim wierszu MUSIMY postawić przecinek, nawet jeśli nie występuje po nim kolejny element:
+```
+notes := {
+  "a",
+  "b",
+  "c",
+}
+```
+
+Możemy użyć biblioteki `fmt` to sprawdzenia sygnatury tablicy: 
+```
+fmt.Printf("%#v\n", mojaTablica)
+// [3]int{2,3,4}
+```
+
+Sprawdzanie wielkości tablicy: `len(mojaTablica)`
+
+Przeglądanie tablicy za pomocą pętli for:
+```
+for i := 0 <= len(notes); i++ {
+  fmt.Println(i, notes[i])
+}
+```
+
+Bezpieczne tworzenie tablicy za pomocą for range:
+```
+for index, value := range mojaTablica {
+  fmt.Println(index, value)
+}
+```
+
+To samo z pominięciem zwracania indeksu:
+```
+for _, value := range mojaTablica {
+  fmt.Println(value)
+}
+```
