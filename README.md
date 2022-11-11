@@ -373,3 +373,44 @@ Do funkcji wariadycznej możne przekazać wycinek zamiast grupy argumentów ale 
 mojWycinek := []{1,2,3}
 mojaFunkcjaWariadycza(mojWycinek...)
 ```
+
+## Mapy
+
+Deklaracja:
+```
+var mojaMapa map[string]float64
+// utworzenie zmiennej mapy o kluczu string i wartości float64
+
+mojaMapa := make(map[string]int)
+// utworzenie samej mapy
+```
+
+Krótka deklaracja:
+```
+mojaMapa := make(map[string]int)
+```
+
+Na mapach operujemy tak jak na tablicach i wycinkach. Róznica polega na tym, że w tablicach i wycinkach indeksami mogą być tylko liczby całkowite.
+
+Deklarowanie literałem:
+```
+mojaMapa := map[string]flaot64 {"a": 1.2, "b": 5.6}
+```
+
+## "Idiom przecinek Go"
+
+Często trudno jest stwierdzić czy wartość zerowa danej tablicy/wycinka/mapy została utworzona automatycznie, czy może zapisano element, który jest równy wartości zerowej. Istnieje technika żeby to sprawdzić:
+```
+mojaMapa := map[string]int{"a": 3, "b": 0}
+var value int
+var ok bool
+
+value, ok = counters["b"]
+fmt.Println(value, ok)
+// 3 true
+
+value, ok = counter["c"]
+fmt.Println(value, ok)
+// 0 false
+```
+
