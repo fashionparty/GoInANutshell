@@ -343,13 +343,13 @@ UWAGA - zmiana elementu w tablicy będzie dotyczyła wycinków z niej utworzonyc
 UWAGA2 - zawsze kiedy tworzysz wycinek pod spodem jest tworzona tablica bazowa. Kilka wycinków może korzystać z tej samej tablicy bazowej. Trzeba tego zawsze pilnować bo pracowanie z wycinkami może być zagmatwane:
 ```
 s1 := []string{"a", "b"}
-  s2 := append(s1, "c", "d")
-  s3 := append(s2, "e", "f")
-  s4 := append(s3, "g", "h")
+s2 := append(s1, "c", "d")
+s3 := append(s2, "e", "f")
+s4 := append(s3, "g", "h")
 
-  fmt.Println(s1, s2, s3, s4)
-  // [a b] [a b c d] [a b c d e f] [a b c d e f g h]
-  s4[0] = "X"
-  fmt.Println(s1, s2, s3, s4)
-  // [a b] [a b c d] [X b c d e f] [X b c d e f g h]
+fmt.Println(s1, s2, s3, s4)
+// [a b] [a b c d] [a b c d e f] [a b c d e f g h]
+s4[0] = "X"
+fmt.Println(s1, s2, s3, s4)
+// [a b] [a b c d] [X b c d e f] [X b c d e f g h]
 ```
