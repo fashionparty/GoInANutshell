@@ -353,3 +353,23 @@ s4[0] = "X"
 fmt.Println(s1, s2, s3, s4)
 // [a b] [a b c d] [X b c d e f] [X b c d e f g h]
 ```
+
+Niezainicjalizowane wycinki mają wartość `nil`. Nie są jednak niebezpieczne, ponieważ mechanizm języka będzie je traktował jako puste zbiory - możemy na nich wywoływać metody `len` czy `append`.
+
+## Funkcje wariadyczne
+
+Deklaracja:
+```
+func mojaFunkcja(arg1 int, arg2 ... string) {
+  // arg2 jest wycinkiem
+}
+```
+
+Tylko ostatni argument może być wariadyczny.
+Argumentu wariadycznego nie trzeba podawać - w samej funkcji stanie się on pustym wycinkiem.
+
+Do funkcji wariadycznej możne przekazać wycinek zamiast grupy argumentów ale w takim wypadku trzeba użyć wielokropka:
+```
+mojWycinek := []{1,2,3}
+mojaFunkcjaWariadycza(mojWycinek...)
+```
