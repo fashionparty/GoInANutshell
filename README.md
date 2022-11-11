@@ -390,6 +390,11 @@ Krótka deklaracja:
 mojaMapa := make(map[string]int)
 ```
 
+Usuwanie elementów:
+```
+delete(mojaMapa, "klucz")
+```
+
 Na mapach operujemy tak jak na tablicach i wycinkach. Róznica polega na tym, że w tablicach i wycinkach indeksami mogą być tylko liczby całkowite.
 
 Deklarowanie literałem:
