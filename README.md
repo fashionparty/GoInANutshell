@@ -302,3 +302,45 @@ for _, value := range mojaTablica {
   fmt.Println(value)
 }
 ```
+
+## Wycinki
+
+Deklaracja:
+```
+var mojWycinek [] string
+```
+
+Deklaracja zwykłej tablicy zawsze tworzy tablicę zainicjalizowaną wartościami zerowymi lub tymi, które podasz. Wycinek w przeciwieństwie do tablicy nie jest od razu inicjalizowany.
+
+Inicjalizacja wycinków:
+```
+var mojWycinek := make([]int, 5)
+```
+
+Wycinki również można inicjalizować literałem:
+```
+notes := []string{"a", "b", "c"}
+
+Operator wycinka:
+```
+var tablica = [5]string{"a", "b", "c", "d", "e"}
+wycinek := tablica[1:3] // można pominąć liczby wewnątrz nawiasu kwadratowego żeby czytać od/do końca tablicy
+fmt.Println(wycinek)
+// [b, c]
+```
+
+UWAGA - zmiana elementu w tablicy będzie dotyczyła wycinków z niej utworzonych!!
+
+UWAGA2 - zawsze kiedy tworzysz wycinek pod spodem jest tworzona tablica bazowa. Kilka wycinków może korzystać z tej samej tablicy bazowej. Trzeba tego zawsze pilnować bo pracowanie z wycinkami może być zagmatwane:
+```
+s1 := []string{"a", "b"}
+  s2 := append(s1, "c", "d")
+  s3 := append(s2, "e", "f")
+  s4 := append(s3, "g", "h")
+
+  fmt.Println(s1, s2, s3, s4)
+  // [a b] [a b c d] [a b c d e f] [a b c d e f g h]
+  s4[0] = "X"
+  fmt.Println(s1, s2, s3, s4)
+  // [a b] [a b c d] [X b c d e f] [X b c d e f g h]
+```
