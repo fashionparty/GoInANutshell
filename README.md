@@ -402,6 +402,12 @@ Deklarowanie literałem:
 mojaMapa := map[string]flaot64 {"a": 1.2, "b": 5.6}
 ```
 
+For range w przypadku map przegląda mapę za każdym razem w INNEJ kolejności:
+```
+for key, value := range mojaMapa{}
+```
+Jeżeli chcemy posortowaną mapę to najlepiej zapisać ją w wycinku i osobno posortowac.
+
 ## "Idiom przecinek Go"
 
 Często trudno jest stwierdzić czy wartość zerowa danej tablicy/wycinka/mapy została utworzona automatycznie, czy może zapisano element, który jest równy wartości zerowej. Istnieje technika żeby to sprawdzić:
