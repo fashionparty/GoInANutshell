@@ -320,6 +320,7 @@ var mojWycinek := make([]int, 5)
 Wycinki również można inicjalizować literałem:
 ```
 notes := []string{"a", "b", "c"}
+```
 
 Operator wycinka:
 ```
@@ -327,6 +328,14 @@ var tablica = [5]string{"a", "b", "c", "d", "e"}
 wycinek := tablica[1:3] // można pominąć liczby wewnątrz nawiasu kwadratowego żeby czytać od/do końca tablicy
 fmt.Println(wycinek)
 // [b, c]
+```
+
+Dodawnie elementów:
+```
+s1 := []string{"a", "b"}
+s1 = append(s1, "c")
+fmt.Println(s1)
+// [a b c]
 ```
 
 UWAGA - zmiana elementu w tablicy będzie dotyczyła wycinków z niej utworzonych!!
