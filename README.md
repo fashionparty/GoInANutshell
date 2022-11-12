@@ -451,3 +451,17 @@ var mojaZmienna mojTyp
 mojaZmienna.pole1 = "a"
 mojaZmienna.pole2 = 3
 ```
+
+Nie można ustawić domyślnych wartości w strukturze. Domyślnych kontruktor należy stworzyć w postaci funkcji zwracajacej domyślną strukturę.
+Settery uzyskujemy przez pisanie własnych funkcji ze wskaźnikami:
+```
+func applyDiscount(s *subscriber) {
+// subscriber.price = (...)
+}
+
+func main() {
+  var s subscriber
+  subscriber1 := defaultSubscriber
+  applyDiscount(&subscriber1)
+}
+```
