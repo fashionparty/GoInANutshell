@@ -425,3 +425,29 @@ fmt.Println(value, ok)
 // 0 false
 ```
 
+## Struktury
+
+Deklaracja:
+```
+val mojaStruktura struct {
+  pole1 string
+  pole2 int
+}
+
+mojaStruktura.pole1 = "a"
+mojaStruktura.pole2 = 3
+```
+
+## Typy zdefiniowane
+
+Deklaracja:
+```
+type mojTyp struct {
+  pole1 string
+  pole2 int
+}
+
+var mojaZmienna mojTyp
+mojaZmienna.pole1 = "a"
+mojaZmienna.pole2 = 3
+```
