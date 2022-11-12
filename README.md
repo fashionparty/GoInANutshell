@@ -427,6 +427,8 @@ fmt.Println(value, ok)
 
 ## Struktury
 
+Struktura to zestaw pól różnych typów, przypomina klasę z OOP ale jest od niej dużo prostsza. Strukturę możemy stworzyć literałem ale w ten sposób tworzymy coś na wzór singletona bo jest ona przypisana tylko do konkretnej zmiennej. Aby stworzyć szablon `ala klasa należy użyć typu zdefiniowanego.
+
 Deklaracja:
 ```
 val mojaStruktura struct {
@@ -439,6 +441,8 @@ mojaStruktura.pole2 = 3
 ```
 
 ## Typy zdefiniowane
+
+Szablon do tworzenia struktur. Należy je definiować w ciele pakietu.
 
 Deklaracja:
 ```
