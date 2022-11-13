@@ -440,6 +440,11 @@ mojaStruktura.pole1 = "a"
 mojaStruktura.pole2 = 3
 ```
 
+Literał struktur:
+```
+myCar := {name: "Bitroen Cerlingo", topSpeed: 45)
+// pominięte pola uzyskają wartość zerową
+```
 ## Typy zdefiniowane
 
 Szablon do tworzenia struktur. Należy je definiować w ciele pakietu.
