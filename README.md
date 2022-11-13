@@ -474,3 +474,40 @@ func main() {
   applyDiscount(&subscriber1)
 }
 ```
+
+** Struktury zagnieżdżone
+
+```
+type Address struct {
+  street string
+}
+
+type Employee struct {
+  Adress: Adress
+}
+
+func main() {
+  var emp Employee
+  emp.Adress.street = "Bagienna"
+}
+```
+
+Można pomijać nazwę zagnieżdżonej struktury jeśli będzie anonimowa:
+```
+type Employee struct {
+type Address struct {
+  street string
+}
+
+type Employee struct {
+  Adress
+}
+
+func main() {
+  var emp Employee
+  emp.street = "Bagienna"
+}
+```
+
+Jeśli wystąpią dwie zagnieżdżone struktury anonimowe o takich samych polach to będziesz musiał używać pełnych wywołań.
+
