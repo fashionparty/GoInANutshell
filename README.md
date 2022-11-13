@@ -479,7 +479,7 @@ func main() {
 
 ```
 type Address struct {
-  street string
+  Street string
 }
 
 type Employee struct {
@@ -488,7 +488,7 @@ type Employee struct {
 
 func main() {
   var emp Employee
-  emp.Adress.street = "Bagienna"
+  emp.Adress.Street = "Bagienna"
 }
 ```
 
@@ -505,7 +505,7 @@ type Employee struct {
 
 func main() {
   var emp Employee
-  emp.street = "Bagienna"
+  emp.Street = "Bagienna"
 }
 ```
 
