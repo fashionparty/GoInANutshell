@@ -475,7 +475,7 @@ func main() {
 }
 ```
 
-** Struktury zagnieżdżone
+## Struktury zagnieżdżone
 
 ```
 type Address struct {
@@ -496,7 +496,7 @@ Można pomijać nazwę zagnieżdżonej struktury jeśli będzie anonimowa:
 ```
 type Employee struct {
 type Address struct {
-  street string
+  Street string
 }
 
 type Employee struct {
