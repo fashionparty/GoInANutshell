@@ -190,18 +190,6 @@ require {
 - nazwy pakietów powinny być pisane małymi literami, powinny być skrótami, jeżeli składa się z więcej niż jednego słowa to NIE używamy camelcase'a
 - nazwy funkcji i zmiennych eksportowanych (publicznych) są pisane wielką literą. Jest to mechanizm samego języka
 
-## Stałe
-
-Deklaracja:
-```
-const Stala int = 3
-```
-
-W stałych można pominąć typ ale nie można używać zapisu `:=`:
-```
-const Stala = 3
-```
-
 ## Tablice
 
 Inicjalizacja:
