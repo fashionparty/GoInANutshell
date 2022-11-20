@@ -349,23 +349,6 @@ for key, value := range mojaMapa{}
 ```
 Jeżeli chcemy posortowaną mapę to najlepiej zapisać ją w wycinku i osobno posortowac.
 
-## "Idiom przecinek Go"
-
-Często trudno jest stwierdzić czy wartość zerowa danej tablicy/wycinka/mapy została utworzona automatycznie, czy może zapisano element, który jest równy wartości zerowej. Istnieje technika żeby to sprawdzić:
-```
-mojaMapa := map[string]int{"a": 3, "b": 0}
-var value int
-var ok bool
-
-value, ok = counters["b"]
-fmt.Println(value, ok)
-// 3 true
-
-value, ok = counter["c"]
-fmt.Println(value, ok)
-// 0 false
-```
-
 ## Struktury
 
 Struktura to zestaw pól różnych typów, przypomina klasę z OOP ale jest od niej dużo prostsza. Strukturę możemy stworzyć literałem ale w ten sposób tworzymy coś na wzór singletona bo jest ona przypisana tylko do konkretnej zmiennej. Aby stworzyć szablon `ala klasa należy użyć typu zdefiniowanego.
