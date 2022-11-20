@@ -349,26 +349,6 @@ for key, value := range mojaMapa{}
 ```
 Jeżeli chcemy posortowaną mapę to najlepiej zapisać ją w wycinku i osobno posortowac.
 
-## Struktury
-
-Struktura to zestaw pól różnych typów, przypomina klasę z OOP ale jest od niej dużo prostsza. Strukturę możemy stworzyć literałem ale w ten sposób tworzymy coś na wzór singletona bo jest ona przypisana tylko do konkretnej zmiennej. Aby stworzyć szablon `ala klasa należy użyć typu zdefiniowanego.
-
-Deklaracja:
-```
-val mojaStruktura struct {
-  pole1 string
-  pole2 int
-}
-
-mojaStruktura.pole1 = "a"
-mojaStruktura.pole2 = 3
-```
-
-Literał struktur:
-```
-myCar := {name: "Bitroen Cerlingo", topSpeed: 45)
-// pominięte pola uzyskają wartość zerową
-```
 ## Typy zdefiniowane
 
 Szablon do tworzenia struktur. Należy je definiować w ciele pakietu.
