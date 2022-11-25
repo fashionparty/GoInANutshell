@@ -49,46 +49,6 @@ a := 1
 a, err = strconv.ParseFloat("1.23", 64)
 // ok
 ```
-## Uruchamianie kodu
-
-1. Sprawdź czy Go jest zainstalowane przez `go version`
-2. (opcjonalnie) Sformatuj kod przez `go fmt nazwaPliku.go`
-3. Skompiluj kod przez `go build nazwaPliku.go`
-4. Odpal .exe przez `nazwaPliku.exe`
-
-Można też szybciej uruchomić program bez zapisywania pliku wykonywalnego przez `go run nazwaPliku.go`
-
-## Instrukcje warunkowe i pętle
-
-If:
-
-```
-if 12 == 12 && 5.0 >= 5.0 {
-//todo
-} else if 12==12 || 5.9 ==6.4 {
-//todo
-} else { 
-//todo
-}
-```
-
-For:
-```
-for i := 1; i<10; i++ {}
-```
-
-For inaczej:
-```
-x := 1
-for x<10 {
-x++
-}
-```
-
-For nieskończony:
-```
-for i := 1; true, i++ {}
-```
 
 ## Formatowanie stringów
 
