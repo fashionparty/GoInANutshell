@@ -115,15 +115,6 @@ fmt.Printf(%.2f\n, 1.2600000000000002
 // 1.26
 ```
 
-## Funkcje
-
-Funkcja przyjmująca dwa floaty i zwracająca jeden float oraz obiekt error
-```
-func mojaFunkcja(arg1 float64, arg2 float64) (float64, error) {
-  
-}
-```
-
 ## Wskaźniki
 Do pobrania adresu zmiennej używamy `&`
 Typ wskaźnikowy to typ zmiennej wskazywanej prezez wskaźnik, np. `*int`
@@ -161,86 +152,6 @@ func addTwo(number *int) {
   *number += 2
 }
 ```
-
-## Pakiety i struktura projektu
-
-```
-- Nazwa Projektu
-  - main.go
-  - mod.go
-  - pakiet1
-    -plik.go
-  -pakiet2
-    -plik.go
-```
-
-Plik `mod.go` tworzymy przez polecenie `go mod init NazwaProjektu`
-
-Struktura pliku `mod.go`:
-```
-module $NazwaModulu
-
-go $versia
-
-require {
-  // zależności
-}
-```
-
-- nazwy pakietów powinny być pisane małymi literami, powinny być skrótami, jeżeli składa się z więcej niż jednego słowa to NIE używamy camelcase'a
-- nazwy funkcji i zmiennych eksportowanych (publicznych) są pisane wielką literą. Jest to mechanizm samego języka
-
-## Funkcje wariadyczne
-
-Deklaracja:
-```
-func mojaFunkcja(arg1 int, arg2 ... string) {
-  // arg2 jest wycinkiem
-}
-```
-
-Tylko ostatni argument może być wariadyczny.
-Argumentu wariadycznego nie trzeba podawać - w samej funkcji stanie się on pustym wycinkiem.
-
-Do funkcji wariadycznej możne przekazać wycinek zamiast grupy argumentów ale w takim wypadku trzeba użyć wielokropka:
-```
-mojWycinek := []{1,2,3}
-mojaFunkcjaWariadycza(mojWycinek...)
-```
-
-## Mapy
-
-Deklaracja:
-```
-var mojaMapa map[string]float64
-// utworzenie zmiennej mapy o kluczu string i wartości float64
-
-mojaMapa := make(map[string]int)
-// utworzenie samej mapy
-```
-
-Krótka deklaracja:
-```
-mojaMapa := make(map[string]int)
-```
-
-Usuwanie elementów:
-```
-delete(mojaMapa, "klucz")
-```
-
-Na mapach operujemy tak jak na tablicach i wycinkach. Róznica polega na tym, że w tablicach i wycinkach indeksami mogą być tylko liczby całkowite.
-
-Deklarowanie literałem:
-```
-mojaMapa := map[string]flaot64 {"a": 1.2, "b": 5.6}
-```
-
-For range w przypadku map przegląda mapę za każdym razem w INNEJ kolejności:
-```
-for key, value := range mojaMapa{}
-```
-Jeżeli chcemy posortowaną mapę to najlepiej zapisać ją w wycinku i osobno posortowac.
 
 ## Typy zdefiniowane
 
