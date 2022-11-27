@@ -76,42 +76,7 @@ fmt.Printf(%.2f\n, 1.2600000000000002
 ```
 
 ## Wskaźniki
-Do pobrania adresu zmiennej używamy `&`
-Typ wskaźnikowy to typ zmiennej wskazywanej prezez wskaźnik, np. `*int`
 
-```
-val myIntPointer = *int
-myIntPointer = &myInt
-```
-
-Można również wykorzystać skrócony zapis:
-```
-myFloatPointer := &myFloat
-```
-
-Pobieranie wartości ze wskaźnika:
-```
-myInt := 4
-myIntPointer := &myFloat
-
-fmt.Println(myIntPonter)
-// 0x1040a124
-
-fmt.Println(&myIntPointer)
-// 4
-```
-
-Modyfikowanie zmiennej znajdującej się po za funkcją za pomocą wskaźnika:
-```
-func main() {
-  amount := 6
-  double(&amount)
-}
-
-func addTwo(number *int) {
-  *number += 2
-}
-```
 
 ## Typy zdefiniowane
 
