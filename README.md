@@ -19,6 +19,8 @@
 - [15. Metody](https://github.com/fashionparty/GoInANutshell/blob/main/15.md)
 - [16. Interfejsy](https://github.com/fashionparty/GoInANutshell/blob/main/16.md)
 - [17. Obsługa błędów](https://github.com/fashionparty/GoInANutshell/blob/main/17.md)
+- [18. Moduły, pakiety, importy](https://github.com/fashionparty/GoInANutshell/blob/main/18.md)
+- [19. Gorutyny](https://github.com/fashionparty/GoInANutshell/blob/main/19.md)
 
 
 ## Podstawy
