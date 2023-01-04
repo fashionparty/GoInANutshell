@@ -22,6 +22,8 @@
 - [18. Moduły, pakiety, importy](https://github.com/fashionparty/GoInANutshell/blob/main/18.md)
 - [19. Gorutyny](https://github.com/fashionparty/GoInANutshell/blob/main/19.md)
 - [20. Testowanie](https://github.com/fashionparty/GoInANutshell/blob/main/20.md)
+- [21. Programowanie sieciowe](https://github.com/fashionparty/GoInANutshell/blob/main/21.md)
+- [22. Funkcje pierwszoklasowe](https://github.com/fashionparty/GoInANutshell/blob/main/22.md) 
 
 
 ## Podstawy
