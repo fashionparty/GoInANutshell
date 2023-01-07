@@ -24,4 +24,4 @@
 - [20. Testowanie](https://github.com/fashionparty/GoInANutshell/blob/main/20.md)
 - [21. Programowanie sieciowe](https://github.com/fashionparty/GoInANutshell/blob/main/21.md)
 - [22. Funkcje pierwszoklasowe](https://github.com/fashionparty/GoInANutshell/blob/main/22.md)
-- 
+- [23. Szablony HTTP](https://github.com/fashionparty/GoInANutshell/blob/main/23.md)
