@@ -7,7 +7,7 @@
 - [3. Tablice i Wycinki](https://github.com/fashionparty/GoInANutshell/blob/main/3.md)
 - [4. Łańcuchy, runy i bajty](https://github.com/fashionparty/GoInANutshell/blob/main/4.md)
 - [5. Mapy](https://github.com/fashionparty/GoInANutshell/blob/main/5.md)
-- [6. Struktury](https://github.com/fashionparty/GoInANutshell/blob/main/6.md)
+- [6. Struktury i Typy](https://github.com/fashionparty/GoInANutshell/blob/main/6.md)
 - [7. Blok globalny](https://github.com/fashionparty/GoInANutshell/blob/main/7.md)
 - [8. Specyficzna instrukcja if](https://github.com/fashionparty/GoInANutshell/blob/main/8.md)
 - [9. Pętle for](https://github.com/fashionparty/GoInANutshell/blob/main/9.md)
